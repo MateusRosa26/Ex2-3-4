@@ -9,6 +9,18 @@ namespace VendaIngressos
         public int quantidadeDisponivel;
 
 
+        public Ingresso(string nomeDoShow, double preco, int quantidadeDisponivel)
+        {
+            this.nomeDoShow = nomeDoShow;
+            this.preco = preco;
+            this.quantidadeDisponivel = quantidadeDisponivel;
+        }
+
+
+        public Ingresso()
+        {
+        }
+
         public string GetNomeDoShow()
         {
             return nomeDoShow;
@@ -24,7 +36,7 @@ namespace VendaIngressos
             return quantidadeDisponivel;
         }
 
-        
+
         public void SetNomeDoShow(string novoNome)
         {
             nomeDoShow = novoNome;
